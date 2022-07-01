@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saman Birthday </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- home area design -->
+
+    <header class="header">
+        <div class="row">
+            <div class="content">
+                <h1>
+                    Happy Birthday saman
+                    <span> u r the only one who comes to my life as a friend and makes my life more stronger and made me
+                        that qualified that now i actually now find out why i came to this world and what are my goals
+                        and it all just happens because of you</span>
+                </h1>
+                <p>"Happy birthday! I hope you’re not looking for a present because my presence is my gift to you"</p>
+                <p class="highlight">my bestie birtdhay is on its way its coming soon <br> some best wishes are for you
+                    before your birthday your birthday will be expected in: </p>
+                <div class="launchtime">
+                    <div>
+                        <p id="days">00</p>
+                        <span>days</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="mins">00</p>
+                        <span>minutes</span>
+                    </div>
+                    <div>
+                        <p id="scs">00</p>
+                        <span>seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="saman_prev_ui.png" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <script>
+        let countdate = new Date("Aug 16, 2022 00:00:00").getTime();
+        let x = setInterval(function () {
+            let now = new Date().getTime();
+            let diffrence = countdate - now;
+            var days = Math.floor(diffrence / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diffrence % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diffrence % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diffrence % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML=days;
+            document.getElementById("hours").innerHTML=hours;
+            document.getElementById("mins").innerHTML=minutes;
+            document.getElementById("scs").innerHTML=seconds;
+        }, 1000);
+
+
+    </script>
+</body>
+
+</html>

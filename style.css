@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)), url("pizza.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding:2rem 7%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.header .row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+}
+.header .row .image{
+    flex:1 1 40rem;
+    border-radius:30px;
+}
+.header .row  .content{
+    flex:1 1 40rem;
+    color:#fff;
+}
+.header .row  .content h1{
+    font-size:45px;
+    font-weight:700;
+    letter-spacing:3px;
+}
+.header .row  .content h1 span{
+    display:block;
+    font-weight:300;
+    font-size:20px;
+    letter-spacing:1px;
+    text-transform:lowercase;!important;
+    line-height:1.4;
+    margin-bottom:20px;
+}
+.header .row .image img{
+    max-width:100%;
+    width:800px;
+    
+    
+}
+.header .content p{
+    font-size:18px;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing:3px;
+
+}
+.header .content .highlight{
+    margin-top:10px;
+    font-weight:500;
+    font-size:13px;
+    letter-spacing:0px;
+    background:#FFC000;
+    padding:10px;
+    color:#000;
+    border-radius:10px;
+
+}
+.header .row .content .launchtime{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:25px;
+}
+.header .row .content .launchtime div{
+    flex-gap:3rem;
+}
+.header .row .content .launchtime div p{
+    font-size:40px;
+}
+.header .row .content .launchtime div span{
+    font-size:25px;
+    color:#FFC000;
+}
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size:55%;
+    }
+    .header{ 
+        height:100%;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+                
+    }
+    .header .row{
+        display:flex;
+        flex-direction:reverse;
+    }
+    .header .row .content h1{
+        font-size:30px;
+        text-align:center;
+    }
+    .header .row .content h1 span{
+        font-size:13px;
+        letter-spacing:0;
+    }
+    .header .row .image img{
+        width:1600px;
+    }
+    .header .row .content .launchtime div{
+        text-align:center;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+}
